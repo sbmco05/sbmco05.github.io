@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const textElement = document.getElementById("text");
-    const text = "> loading portfolio";
+    const text = "> loading";
     let i = 0;
 
     function effectWrite() {
