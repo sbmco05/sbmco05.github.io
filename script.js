@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const text = "> loading";
     let i = 0;
 
-    setTimeout(effectWrite, 1000);
+    setTimeout(3000);
 
     function effectWrite() {
         if (i < text.length) {
