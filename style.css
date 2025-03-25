@@ -139,28 +139,6 @@ ul li.item-menu a .icon{
     text-align: left;
     color: #e3d0e3;
     z-index: 1;
-    visibility: hidden;
-}
-
-.textContainerPT{
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    right: 50%;
-    text-align: left;
-    color: #e3d0e3;
-    z-index: 1;
-    visibility: hidden;
-}
-
-.textContainer.active{
-    visibility: visible;
-    transition: 0.5s;
-}
-
-.textContainerPT.active{
-    visibility: visible;
-    transition: 0.5s;
 }
 
 #greeting{
