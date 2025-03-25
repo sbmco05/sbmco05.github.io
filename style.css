@@ -8,6 +8,7 @@ body, html {
     height: 100%;
     width: 100%;
     background-color: #200020;
+    font-family: inconsolata;
 }
 
 .background {
@@ -46,7 +47,7 @@ body, html {
     background-color: #00000060;
     visibility: hidden;
     opacity: 0;
-    z-index: 1;
+    z-index: 2;
     transition: 0.5s;
 }
 
@@ -57,7 +58,7 @@ nav.menu {
     width: 3.55%;
     height: 100%;
     background-color: #422742;
-    z-index: 2;
+    z-index: 3;
     padding: 40px 0 40px 0.5%;
     box-shadow: 5px 0 0 #836683;
     overflow: hidden;
@@ -128,4 +129,74 @@ ul li.item-menu a .icon{
     font-size: 130%;
     margin-left: 10px;
     margin-right: 8px;
+}
+
+.textContainer{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 50%;
+    text-align: left;
+    color: #e3d0e3;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.textContainerPT{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 50%;
+    text-align: left;
+    color: #e3d0e3;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.textContainer.active{
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.textContainerPT.active{
+    visibility: visible;
+    transition: 0.5s;
+}
+
+#greeting{
+    font-weight: 200;
+    font-size: 113%;
+    font-style: italic;
+    text-shadow:
+        /* White glow */
+        0 0 7px #e3d0e3,
+        0 0 10px #e3d0e3,
+        0 0 21px #e3d0e3,
+        /* Green glow */
+        0 0 42px rgb(175, 0, 188),
+        0 0 82px rgb(175, 0, 188),
+        0 0 92px rgb(175, 0, 188),
+        0 0 102px rgb(175, 0, 188),
+        0 0 151px rgb(175, 0, 188);
+}
+
+#nameHeader{
+    font-size: 320%;
+    font-weight: 800;
+}
+
+#name{
+    font-size: 138%;
+    font-weight: 900;
+    text-shadow:
+        0 0 3px #e3d0e3,
+        0 0 25px rgb(175, 0, 188);
+}
+
+#description{
+    margin-top: 5px;
+    font-size: 140%;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: justify;
 }
