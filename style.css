@@ -37,27 +37,46 @@ body, html {
     z-index: 0;
 }
 
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
 nav.menu {
     position: fixed; 
     top: 0;
     left: 0;
-    width: 3.9%;
+    width: 3.55%;
     height: 100%;
     background-color: #422742;
     z-index: 2;
-    padding: 40px 0 40px 0.8%;
+    padding: 40px 0 40px 0.5%;
     box-shadow: 5px 0 0 #836683;
     overflow: hidden;
-    transition: 0.2s;
+    transition: 0.65s;
 }
 
-nav.menu:hover{
-    width: 10%;
+nav.menu.expand{
+    width: 12%;
+}
+
+.overlay.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .btn-expandir{
     width: 100%;
-    padding-left: 7px;
+    padding-left: 10px;
     padding-bottom: 10px;
 }
 
@@ -73,7 +92,11 @@ ul{
 }
 
 ul li.item-menu{
-    transition: .2s;
+    transition: .3s;
+}
+
+ul li.active{
+    background-color: #836683;
 }
 
 ul li.item-menu:hover{
@@ -92,10 +115,17 @@ ul li.item-menu a{
 
 ul li.item-menu a .link{
     margin-left: 10px;
+    transition: .65s;
+    opacity: 0;
+}
+
+nav.menu.expand .link{
+    margin-left: 1px;
+    opacity: 1;
 }
 
 ul li.item-menu a .icon{
     font-size: 130%;
-    margin-left: 7px;
+    margin-left: 10px;
     margin-right: 8px;
 }
